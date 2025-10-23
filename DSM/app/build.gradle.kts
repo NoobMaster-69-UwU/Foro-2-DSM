@@ -1,17 +1,18 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.gms.google-services") // 🔹 importante para Firebase
+    id("com.google.gms.google-services")
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
-    namespace = "com.example.controlgastos"
-    compileSdk = 35
+    namespace = "sv.edu.controlgastos"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.controlgastos"
+        applicationId = "sv.edu.controlgastos"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
     }
@@ -21,13 +22,22 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.3"
+
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }
 
 dependencies {
     // Firebase BOM (maneja versiones automáticamente)
-    implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
+    implementation(platform("com.google.firebase:firebase-bom:34.4.0"))
 
     // Firebase Authentication
     implementation("com.google.firebase:firebase-auth")
@@ -44,4 +54,5 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.3.0")
     implementation("androidx.compose.ui:ui-tooling-preview:1.7.0")
     debugImplementation("androidx.compose.ui:ui-tooling:1.7.0")
+    implementation("androidx.navigation:navigation-compose:2.7.3")
 }

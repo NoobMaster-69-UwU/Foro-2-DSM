@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "749104024067",
+    "project_id": "controlgastosdsm",
+    "storage_bucket": "controlgastosdsm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749104024067:android:3798631f9a20c43a231c36",
+        "android_client_info": {
+          "package_name": "sv.edu.controlgastos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749104024067-8un0l3qn55qek1lmi7mjncsleivb4g1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sv.edu.controlgastos",
+            "certificate_hash": "5296f4248a5ad5fec5b0dc3c0f797665ecc93179"
+          }
+        },
+        {
+          "client_id": "749104024067-r0ion99912tk5ni8snt61ilokkij2nkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7yinwf7VH7XT9IQrHHeCgxj0lGwUlIYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749104024067-r0ion99912tk5ni8snt61ilokkij2nkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
